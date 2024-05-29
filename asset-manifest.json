@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "https://mirochiu.github.io/simple-react-gallery/static/css/main.09bda3e6.css",
-    "main.js": "https://mirochiu.github.io/simple-react-gallery/static/js/main.6eb3d28b.js",
+    "main.js": "https://mirochiu.github.io/simple-react-gallery/static/js/main.5e7c280c.js",
     "static/js/828.d3254f0a.chunk.js": "https://mirochiu.github.io/simple-react-gallery/static/js/828.d3254f0a.chunk.js",
     "index.html": "https://mirochiu.github.io/simple-react-gallery/index.html",
     "main.09bda3e6.css.map": "https://mirochiu.github.io/simple-react-gallery/static/css/main.09bda3e6.css.map",
-    "main.6eb3d28b.js.map": "https://mirochiu.github.io/simple-react-gallery/static/js/main.6eb3d28b.js.map",
+    "main.5e7c280c.js.map": "https://mirochiu.github.io/simple-react-gallery/static/js/main.5e7c280c.js.map",
     "828.d3254f0a.chunk.js.map": "https://mirochiu.github.io/simple-react-gallery/static/js/828.d3254f0a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.09bda3e6.css",
-    "static/js/main.6eb3d28b.js"
+    "static/js/main.5e7c280c.js"
   ]
 }
