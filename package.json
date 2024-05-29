@@ -2,6 +2,7 @@
   "name": "simple-react-gallery",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mirochiu.github.io/simple-react-gallery",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -17,8 +18,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "predeploy": "pnpm run build",
+    "deploy": "pnpm exec gh-pages -d build",
+    "start": "env-cmd -f ./.env.development.local react-scripts start",
+    "build": "env-cmd -f ./.env.production.local react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -40,5 +43,9 @@
       "last 1 safari version"
     ]
   },
-  "packageManager": "pnpm@9.1.3+sha512.7c2ea089e1a6af306409c4fc8c4f0897bdac32b772016196c469d9428f1fe2d5a21daf8ad6512762654ac645b5d9136bb210ec9a00afa8dbc4677843ba362ecd"
+  "packageManager": "pnpm@9.1.3+sha512.7c2ea089e1a6af306409c4fc8c4f0897bdac32b772016196c469d9428f1fe2d5a21daf8ad6512762654ac645b5d9136bb210ec9a00afa8dbc4677843ba362ecd",
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "gh-pages": "^6.1.1"
+  }
 }

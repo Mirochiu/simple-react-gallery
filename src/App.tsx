@@ -5,11 +5,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Simple React Gallery</h1>
         <ImageGallery
           images={[
-            '/imgs/pexels-thatguycraig000-1563355.jpg',
-            '/imgs/pexels-eberhardgross-443446.jpg',
-            '/imgs/pexels-eberhardgross-1624496.jpg',
+            `${process.env.PUBLIC_URL}/imgs/pexels-thatguycraig000-1563355.jpg`,
+            `${process.env.PUBLIC_URL}/imgs/pexels-eberhardgross-443446.jpg`,
+            `${process.env.PUBLIC_URL}/imgs/pexels-eberhardgross-1624496.jpg`,
           ]}
         />
       </header>
