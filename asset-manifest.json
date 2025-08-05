@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "https://mirochiu.github.io/simple-react-gallery/static/css/main.09bda3e6.css",
-    "main.js": "https://mirochiu.github.io/simple-react-gallery/static/js/main.5e7c280c.js",
-    "static/js/828.d3254f0a.chunk.js": "https://mirochiu.github.io/simple-react-gallery/static/js/828.d3254f0a.chunk.js",
+    "main.js": "https://mirochiu.github.io/simple-react-gallery/static/js/main.7dfbf49f.js",
+    "static/js/902.428d430d.chunk.js": "https://mirochiu.github.io/simple-react-gallery/static/js/902.428d430d.chunk.js",
     "index.html": "https://mirochiu.github.io/simple-react-gallery/index.html",
     "main.09bda3e6.css.map": "https://mirochiu.github.io/simple-react-gallery/static/css/main.09bda3e6.css.map",
-    "main.5e7c280c.js.map": "https://mirochiu.github.io/simple-react-gallery/static/js/main.5e7c280c.js.map",
-    "828.d3254f0a.chunk.js.map": "https://mirochiu.github.io/simple-react-gallery/static/js/828.d3254f0a.chunk.js.map"
+    "main.7dfbf49f.js.map": "https://mirochiu.github.io/simple-react-gallery/static/js/main.7dfbf49f.js.map",
+    "902.428d430d.chunk.js.map": "https://mirochiu.github.io/simple-react-gallery/static/js/902.428d430d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.09bda3e6.css",
-    "static/js/main.5e7c280c.js"
+    "static/js/main.7dfbf49f.js"
   ]
 }
