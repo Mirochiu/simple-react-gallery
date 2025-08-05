@@ -1,8 +1,10 @@
 import { useState, type MouseEventHandler } from 'react';
+import { type StaticImageData } from 'next/image';
+
 import './ImageGallery.css';
 
 type Props = {
-    image: string,
+    image: StaticImageData,
     title?: string,
     onClose: MouseEventHandler,
     onPrevious: MouseEventHandler,
@@ -24,7 +26,7 @@ const ImageModal = ({ image, onClose, onPrevious, onNext, title }: Props) => {
                 <button className="close-button" onClick={handleClose} title='關閉'>&times;</button>
                 <div className="image-container">
                     <button className="prev-button" onClick={onPrevious} title='前一張' />
-                    <img className="image-fullscreen fadeIn" src={image} alt="Enlarged" />
+                    <img className="image-fullscreen fadeIn" src={image.src} alt="Enlarged" />
                     <button className="next-button" onClick={onNext} title='後一張' />
                 </div>
             </div>
@@ -32,9 +34,9 @@ const ImageModal = ({ image, onClose, onPrevious, onNext, title }: Props) => {
     );
 };
 
-type Selected = { url: string, index: number } | null;
+type Selected = { url: StaticImageData, index: number } | null;
 
-const ImageGallery = ({ images }: { images: string[] }) => {
+const ImageGallery = ({ images }: { images: StaticImageData[] }) => {
     const [selectedImage, setSelectedImage] = useState<Selected>(null);
 
     const index2normal = (index: number) => {
@@ -71,7 +73,7 @@ const ImageGallery = ({ images }: { images: string[] }) => {
                 {images.map((image, index) => (
                     <img
                         key={index}
-                        src={image}
+                        src={image.src}
                         alt={`mine ${index}`}
                         onClick={() => setSelectedImage({ url: images[index], index })}
                     />
