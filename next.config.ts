@@ -1,4 +1,5 @@
 import type { NextConfig } from 'next'
+import path from 'node:path';
 
 const isDev = process.env.NODE_ENV !== 'production';
 
@@ -8,6 +9,9 @@ const nextConfig: NextConfig = {
   webpack: (config, { isServer }) => {
     // Modify the webpack config here
     return config
+  },
+  turbopack: {
+    root: path.join(__dirname, '..'),
   },
   basePath: isDev ? '' : '/simple-react-gallery',
   images: {
