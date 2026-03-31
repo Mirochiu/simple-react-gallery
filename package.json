@@ -1,13 +1,13 @@
 {
   "name": "simple-react-gallery",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "homepage": "https://mirochiu.github.io/simple-react-gallery",
   "dependencies": {
     "@types/node": "^20.19.26",
     "@types/react": "^18.3.27",
     "@types/react-dom": "^18.3.7",
-    "next": "^15.5.10",
+    "next": "^15.5.14",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "typescript": "^5.9.3"
@@ -17,9 +17,9 @@
     "deploy": "pnpm exec gh-pages -d build --dotfiles",
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "pnpm exec serve@latest ./build"
+    "start": "pnpm dlx serve build"
   },
-  "packageManager": "pnpm@10.25.0+sha512.5e82639027af37cf832061bcc6d639c219634488e0f2baebe785028a793de7b525ffcd3f7ff574f5e9860654e098fe852ba8ac5dd5cefe1767d23a020a92f501",
+  "packageManager": "pnpm@10.33.0+sha512.10568bb4a6afb58c9eb3630da90cc9516417abebd3fabbe6739f0ae795728da1491e9db5a544c76ad8eb7570f5c4bb3d6c637b2cb41bfdcdb47fa823c8649319",
   "devDependencies": {
     "env-cmd": "^11.0.0",
     "gh-pages": "^6.3.0"
